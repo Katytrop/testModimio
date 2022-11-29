@@ -623,6 +623,7 @@ body._lock {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: inherit;
 }
 
 .paths__item:not(:first-child) {
@@ -853,6 +854,15 @@ body._lock {
   overflow-y: scroll;
 }
 
+.manufacturer__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.manufacturer__list::-webkit-scrollbar-thumb {
+  background-color: #E0E0E0;
+  border-radius: 2px;
+}
+
 .scale__search {
   position: relative;
 }
@@ -905,6 +915,15 @@ body._lock {
   margin: 8px 0 0 0;
   max-height: 191px;
   overflow-y: scroll;
+}
+
+.scale__list::-webkit-scrollbar {
+  width: 4px;
+}
+
+.scale__list::-webkit-scrollbar-thumb {
+  background-color: #E0E0E0;
+  border-radius: 2px;
 }
 
 .price-filter__body {
