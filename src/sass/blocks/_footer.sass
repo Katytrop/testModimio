@@ -1,0 +1,95 @@
+.footer
+	background-color: #fff
+	padding: 32px 0px 16px 0px
+	height: 345px
+	// .footer__container
+	&__container
+		height: 100%
+		display: flex
+		flex-direction: column
+	// .footer__logo
+	&__logo
+		padding: 3.5px 4px
+		margin: 0px 0px 36px 0px
+		img
+			width: 148px
+			height: 34px
+
+	// .footer__content
+	&__content
+		display: flex
+		justify-content: space-between
+		padding: 0px 0px 0px 8px
+		margin: 0px 0px 33px 0px
+
+	// .footer__item
+	&__item
+		min-width: 328px
+		&_assort
+			margin-left: -10px
+	// .footer__title
+	&__title
+		font-size: 18px
+		font-weight: 500
+		line-height: 28px
+		margin: 0px 0px 8px 0px
+
+	// .footer__list
+	&__list
+
+	// .footer__link
+	&__link
+		font-size: 12px
+		line-height: 16px
+		&:not(:last-child)
+			margin: 0px 0px 8px 0px
+		&:hover
+			a
+				text-decoration-line: underline
+		&:active
+			a
+				color: $blueColor
+		a
+			color: inherit
+
+	// .footer__copy
+	&__copy
+		color: $grayColor
+		font-size: 12px
+		line-height: 16px
+
+.item-social
+
+	// .item-social__contacts
+	&__contacts
+		margin: 0px 0px 21px 0px
+
+	// .item-social__phone
+	&__phone
+		font-size: 18px
+		color: inherit
+		font-weight: 500
+		line-height: 28px
+
+	// .item-social__time
+	&__time
+		font-size: 12px
+		line-height: 16px
+
+	// .item-social__networks
+	&__networks
+		display: flex
+		gap: 35px
+		margin-left: 5px
+		svg
+			cursor: pointer
+			width: 36px
+			height: 36px
+			fill: $mainColorText
+#vk
+	&:hover
+		fill: #0077FF
+#insta
+	&:hover
+		fill: url(#gradient)
+

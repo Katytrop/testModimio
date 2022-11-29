@@ -1,0 +1,397 @@
+.filter
+	// .filter__form
+	&__form
+		padding: 16px
+		display: flex
+		flex-direction: column
+		gap: 16px
+	// .filter__category
+	&__category
+	// .filter__item
+	&__item
+		// .filter__item_active
+		&_active
+	// .filter__manufacturer
+	&__manufacturer
+	// .filter__scale
+	&__scale
+	// .filter__price
+	&__price
+	// .filter__switcher
+	&__switcher
+	// .filter__select
+	&__select
+	// .filter__btn
+	&__btn
+		width: 100%
+		border: 2px solid $grayColor
+		border-radius: 9px
+		background-color: #fff
+		height: 36px
+		font-weight: 500
+		&:hover
+			border: 2px solid $blueColor
+		&:active
+			border: 2px solid $blueActive
+	// .filter__favorite
+	&__favorite
+
+.category-filter
+	padding: 3px 0px 0px 0px
+	// .category-filter__title
+	&__title
+		line-height: 24px
+		font-size: 16px
+		font-weight: 500
+		margin: 0px 0px 16px 0px
+	// .category-filter__list
+	&__list
+	// .category-filter__item
+	&__item
+		padding: 8px
+		line-height: 20px
+		cursor: pointer
+		font-size: 14px
+		&:active
+			color: $blueColor
+		&:hover
+			color: $blueText
+		// .category-filter__item_active
+		&_active
+			color: $blueColor
+
+.title-filter
+	cursor: pointer
+	width: 100%
+	display: flex
+	align-items: center
+	justify-content: space-between
+	margin: 0px 0px 7px 0px
+	&._active
+		.arrow-filter
+			transform: rotate(180deg)
+	span
+		font-size: 16px
+		font-weight: 500
+		line-height: 24px
+.arrow-filter
+	width: 24px
+	height: 24px
+	transition: all 0.6s ease 0s
+
+.manufacturer
+	// .manufacturer__title
+	&__title
+	// .manufacturer__arrow
+	&__arrow
+	// .manufacturer__search
+	&__search
+		position: relative
+	// .manufacturer__input
+	&__input
+		width: 100%
+		height: 36px
+		border: 1px solid #E0E0E0
+		border-radius: 9px
+		padding: 8px 12px
+		&::placeholder
+			color: $grayColor
+		&:hover
+			border: 2px solid $mainColorText
+	// .manufacturer__icon
+	&__icon
+		width: 18px
+		height: 18px
+		position: absolute
+		top: 50%
+		transform: translate(0%, -50%)
+		right: 12px
+		fill: $grayColor
+	// .manufacturer__list
+	&__list
+		margin: 8px 0px 0px 0px
+		max-height: 208px
+		overflow-y: scroll
+
+.scale
+	// .scale__title
+	&__title
+
+	// .scale__arrow
+	&__arrow
+
+	// .scale__search
+	&__search
+		position: relative
+	// .scale__input
+	&__input
+		width: 100%
+		height: 36px
+		border: 1px solid #E0E0E0
+		border-radius: 9px
+		padding: 8px 12px
+		&::placeholder
+			color: $grayColor
+		&:hover
+			border: 2px solid $mainColorText
+	// .scale__icon
+	&__icon
+		width: 18px
+		height: 18px
+		position: absolute
+		top: 50%
+		transform: translate(0%, -50%)
+		right: 12px
+		fill: $grayColor
+	// .scale__list
+	&__list
+		margin: 8px 0 0 0
+		max-height: 191px
+		overflow-y: scroll
+
+.price-filter
+	// .price-filter__title
+	&__title
+
+	// .price-filter__arrow
+	&__arrow
+
+	// .price-filter__body
+	&__body
+		padding-bottom: 6px
+
+	// .price-filter__label
+	&__label
+		width: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0px 0px 4px 0px
+		span
+			flex: 0 0 98px
+			color: #757575
+			font-size: 12px
+			line-height: 16px
+
+	// .price-filter__inputs
+	&__inputs
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin: 0px 0px 14px 0px
+
+	// .price-filter__input
+	&__input
+		flex: 0 1 98px
+		border: 1px solid #E0E0E0
+		border-radius: 9px
+		width: 98px
+		height: 36px
+		padding: 8px 12px
+		&::placeholder
+			font-size: 14px
+			
+
+	// .price-filter__range
+	&__range
+		width: 92%
+
+.switcher
+	// .switcher__body
+	&__body
+		font-size: 16px
+		position: relative
+		cursor: pointer
+		transition: all 0.3s ease 0s
+		display: flex
+		&::before
+			content: ""
+			width: 40px
+			height: 24px
+			border-radius: 20px
+			background-color: $grayColor
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			left: 0
+		&::after
+			content: ""
+			position: absolute
+			top: 50%
+			transform: translate(0, -50%)
+			left: 5px
+			width: 16px
+			height: 16px
+			border-radius: 50%
+			background-color: #fff
+			transition: all 0.3s ease 0s
+		&.active
+			&::before
+				background-color: $blueColor
+
+			&::after
+				left: 20px
+
+	// .switcher__input
+	&__input
+		//display: none
+		opacity: 0
+		visibility: hidden
+		flex: 0 0 40px
+		margin: 0px 10px 0px 0px
+	// .switcher__text
+	&__text
+		font-size: 16px
+		line-height: 24px
+
+.select-filter
+	position: relative
+	// .select-filter__text
+	&__text
+		margin: 0px 0px 4px 0px
+		font-size: 12px
+		color: #757575
+		line-height: 16px
+	// .select-filter__body
+	&__body
+		position: relative
+		height: 36px
+		&.active
+			.select-filter__title
+				border: 2px solid $mainColorText
+			.select-filter__content
+				opacity: 1
+			.select-filter__label + .select-filter__input + .select-filter__label
+				max-height: 40px
+	// .select-filter__arrow
+	&__arrow
+		position: absolute
+		top: 46%
+		right: 12px
+		&.active
+			transform: rotate(180deg)
+	// .select-filter__title
+	&__title
+		display: flex
+		align-items: center
+		height: 100%
+		padding: 8px 12px
+		border-radius: 9px
+		border: solid 1px $lightGray
+		cursor: pointer
+		&:hover
+			border: 2px solid $mainColorText
+	// .select__content
+	&__content
+		position: absolute
+		top: 40px
+		left: 0
+		display: flex
+		flex-direction: column
+		width: 100%
+		background-color: #ffffff
+		border: 1px solid $lightGray
+		border-radius: 8px
+		transition: all 0.3s ease-out
+		opacity: 0
+		z-index: 8
+		box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.1)
+	// .select__input
+	&__input
+		display: none
+		&:checked + label
+			background-color: $lightGray
+		&:disabled + label
+			opacity: 0.6
+			pointer-events: none
+	// .select__label
+	&__label
+		display: flex
+		align-items: center
+		width: 100%
+		height: 40px
+		max-height: 0
+		padding: 0 16px
+		transition: all 0.2s ease-out
+		cursor: pointer
+		overflow: hidden
+		border-radius: 8px
+		&:hover
+			background-color: $lightGray !important
+			color: #ffffff
+
+.favorite-filter
+	display: flex
+	gap: 10px
+	justify-content: center
+	margin: 10px 0px 0px 0px
+	// .favorite-filter__text
+	&__text
+		font-weight: 500
+		line-height: 20px
+
+	// .favorite-filter__icon
+	&__icon
+		width: 16px
+		height: 16px
+		cursor: pointer
+		fill: $mainColorText
+		&:hover
+			fill: #279fb9
+
+
+.checkbox
+	position: relative
+	&:not(:last-child)
+		margin: 0px 0px 1.5px 0px
+	&:nth-child(3)
+		small
+			align-self: start
+	// .checkbox__input
+	&__input
+		position: absolute
+		width: 0
+		height: 0
+		opacity: 0
+		visibility: hidden
+		&:checked + .checkbox__label:before
+			border: 2px solid $blueColor
+			background-color: $blueColor
+			background-image: url('../img/checked.png')
+			background-repeat: no-repeat
+			background-size: 10px 10px
+			background-position: 3px 3px
+		&:checked + .checkbox__label:hover:before
+			background-color: $blueActive
+			border: 2px solid $blueActive
+		&:not(:checked) + .checkbox__label:hover:before
+			border: 2px solid $mainColorText
+		&:disabled + label:before
+			background: #F5F5F5
+	// .checkbox__label
+	&__label
+		display: inline-flex
+		align-items: center
+		position: relative
+		font-size: 14px
+		color: $mainColorText
+		cursor: pointer
+		&:before
+			content: ""
+			align-self: flex-start
+			margin: 0px 14px 0px 0px
+			flex: 0 0 20px
+			left: 0
+			top: 0
+			width: 20px
+			height: 20px
+			background-color: transparent
+			border: 2px solid #E0E0E0
+			border-radius: 4px
+		small
+			font-size: 12px
+			color: $grayColor
+			margin: 0px 0px 0px 6px
+		span
+			line-height: 20px
+			margin-left: -2px

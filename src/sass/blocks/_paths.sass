@@ -1,0 +1,25 @@
+.paths
+	padding: 0px 0px 30px 0px
+	// .paths__container
+	&__container
+		display: flex
+		align-items: center
+	// .paths__item
+	&__item
+		display: flex
+		align-items: center
+		&:not(:first-child)	
+			margin: 0px 0px 0px 8px
+		&:last-child .paths__icon
+			display: none
+		&:last-child span
+			color: $grayColor
+	// .paths__icon
+	&__icon	
+		width: 16px
+		height: 16px
+		transform: rotate(-90deg)
+		margin: 0px 0px 0px 9px
+
+
+

@@ -1,0 +1,196 @@
+.header
+	background: linear-gradient(90deg, #1BB69B 0%, #269FB8 100.7%) 50% no-repeat, #fff 50%
+	box-shadow: inset 0px -64px #fff
+	filter: drop-shadow(0px 2px 25px rgba(0, 0, 0, 0.08))
+	// .header__body
+	&__body
+	// .header__top
+	&__top
+		display: flex
+		justify-content: space-between
+		color: #fff
+		min-height: 80px
+	// .header__bottom
+	&__bottom
+		background: #fff
+		min-height: 64px
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+.top-header
+	// .top-header__main
+	&__main
+		display: flex
+		align-items: center
+
+	// .top-header__logo
+	&__logo
+		padding: 0px 24px 0px 0px
+		border-right: 1px solid #fff
+
+	// .top-header__descr
+	&__descr
+		display: flex
+		flex-direction: column
+		margin: 0px 0px 0px 24px
+		line-height: 20px
+
+.actions
+	display: flex
+	align-items: center
+	justify-content: space-between
+	width: 377px
+	a
+		color: inherit
+	// .actions__item
+	&__item
+		display: flex
+		flex-direction: column
+		align-items: center
+		padding: 0 16px
+		// .actions__item_favorite
+		&_favorite
+		// .actions__item_cart
+		&_cart
+		// .actions__item_box
+		&_box
+	// .actions__block
+	&__block
+		position: relative
+		width: 32px
+		height: 32px
+		margin: 0px 0px 4px 0px
+		svg
+			fill: #fff
+			width: 100%
+			height: 100%
+	// .actions-header__text
+	&__text
+		font-size: 12px
+		line-height: 16px
+	// .actions-header__num
+	&__num
+		position: absolute
+		top: -5px
+		right: -5px
+		width: 16px
+		height: 16px
+		display: flex
+		justify-content: center
+		align-items: center
+		border-radius: 50%
+		background-color: $orangeColor
+		font-size: 10px
+
+.profile
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding: 8px 16px
+	@media (any-hover: hover)
+		&:hover
+			background: rgba(255, 255, 255, 0.2)
+	// .profile__photo
+	&__photo
+		border-radius: 50%
+		width: 32px
+		height: 32px
+		margin: 0px 0px 4px 0px
+
+.bottom-header
+	// .bottom-header__content
+	&__content
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 423px
+		padding: 0px 0px 0px 10px
+	// .bottom-header__country
+	&__country
+		display: flex
+		align-items: center
+		span
+			margin: 0px 0px 0px 8px
+	// .bottom-header__text
+	&__text
+		display: flex
+	// .bottom-header__phone
+	&__phone
+		color: inherit
+		font-size: 12px
+	// .bottom-header__time
+	&__time
+		font-size: 12px
+		margin: 0px 0px 0px 3px
+	// .bottom-header__menu
+	&__menu
+
+.menu
+	// .menu__list
+	&__list
+		margin: 0px 0px 8px 0px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		width: 330px
+	// .menu__item
+	&__item
+		padding: 4px 8px
+		&:not(.menu__item_active)
+			&:hover
+				.menu__link
+					color: $blueColor
+			&:active
+				.menu__link
+					color: #1E7B8F
+		// .menu__item_active
+		&_active
+			background-color: $orangeColor
+			border-radius: 6px
+			padding: 4px 8px
+			&:hover
+				background: #FFCF53
+			&:active
+				background: #ECAA00
+	// .menu__link
+	&__link
+		font-size: 12px
+		font-weight: 500
+		color: inherit
+		
+
+//burger
+/* .icon-menu
+	display: none
+	@media ( max-width: $md3 + px )
+		display: block
+		position: absolute
+		top: 0
+		left: 0
+		width: 30px
+		height: 18px
+		cursor: pointer
+		z-index: 5
+		span
+			transition: all 0.3s ease 0s
+			top: calc( 50% - 1px )
+			left: 0
+			position: absolute
+			width: 100%
+			height: 2px
+			background-color: #000
+			&:first-child
+				top: 0
+			&:last-child
+				top: auto
+				bottom: 0
+		&._active
+			span
+				transform: scale(0)
+				&:first-child
+					transform: rotate(-45deg)
+					top: calc( 50% - 1px )
+				&:last-child
+					transform: rotate(45deg)
+					bottom: calc( 50% - 1px ) */

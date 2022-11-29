@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/nouislider.css?_v=20221129155826">
+    <link rel="stylesheet" href="css/style.min.css?_v=20221129155826">
+    <title>Modelnay Lavka</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+    <div class="header__container container">
+        <div class="header__body">
+            <div class="header__top top-header">
+                <div class="top-header__main">
+                    <div class="top-header__logo">
+                        <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt="logo"></picture>
+                    </div>
+                    <div class="top-header__descr">
+                        <span>Честный магазин,</span>
+                        <span>Честные цены!</span>
+                    </div>
+                </div>
+                <div class="top-header__actions actions">
+                    <a href="" class="actions__profile profile">
+                        <div class="profile__photo ibg">
+                            <picture><source srcset="img/profile.webp" type="image/webp"><img src="img/profile.png" alt="profile"></picture>
+                        </div>
+                        <span class="actions__text">Константин М.</span>
+                    </a>
+                    <a href="" class="actions__item actions__item_favorite">
+                        <div class="actions__block">
+                            <svg>
+                                <use xlink:href="img/icons/icons.svg#favorite"></use>
+                            </svg>
+                            <span class="actions__num">5</span>
+                        </div>
+                        <span class="actions__text">Избранное</span>  
+                    </a>
+                    <a href="" class="actions__item actions__item_cart">
+                        <div class="actions__block">
+                            <img src="img/icons/icons.svg#cart" alt="cart">
+                            <span class="actions__num">10</span> 
+                            <!-- этот спан должен быть скрыт, появляется от js -->
+                        </div>
+                        <span class="actions__text">Корзина</span>
+                    </a>
+                    <a href="" class="actions__item actions__item_box">
+                        <div class="actions__block">
+                            <img src="img/icons/icons.svg#box" alt="box">
+                            <!-- <span class="actions__num">3</span> -->
+                        </div>
+                        <span class="actions__text">Доставка</span>
+                    </a>
+                </div>
+            </div>
+            <div class="header__bottom bottom-header">
+                <div class="bottom-header__content">
+                    <div class="bottom-header__country">
+                        <picture><source srcset="img/country.webp" type="image/webp"><img src="img/country.png" alt="country"></picture>
+                        <span>Россия</span>
+                    </div>
+                    <div class="bottom-header__text">
+                        <a href="tel:+78005550736" class="bottom-header__phone">8 800 555-07-36</a>
+                        <div class="bottom-header__time">Пн‑Вс 8:00-20:00</div>
+                    </div>
+                </div>
+                <nav class="bottom-header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item menu__item_active"><a href="#" class="menu__link">Акции</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Производители</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Новинки</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Бонусы</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+        <main class="page">
+            <section class="search">
+                <div class="search__container container">
+                    <div class="search__catalog catalog-search">
+                        <div class="catalog-search__block">
+                            <div class="catalog-search__title">Каталог</div>
+                            <img class="catalog-search__down" src="img/icons/icons.svg#down" alt="down">
+                        </div>
+                        <ul class="catalog-search__list">
+                            <li class="catalog-search__item"><a href="" class="catalog-search__link"></a></li>
+                            <li class="catalog-search__item"><a href="" class="catalog-search__link"></a></li>
+                            <li class="catalog-search__item"><a href="" class="catalog-search__link"></a></li>
+                            <li class="catalog-search__item"><a href="" class="catalog-search__link"></a></li>
+                            <li class="catalog-search__item"><a href="" class="catalog-search__link"></a></li>
+                        </ul>
+                    </div>
+                    <div class="search__line">
+                        <input type="text" name="input-search" placeholder="Поиск..." class="search__input">
+                        <svg class="search__icon">
+                            <use xlink:href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </div>
+                    <a href="#" class="search__btn">
+                        <span>Поиск</span>
+                        <svg class="search__icon_white">
+                            <use xlink:href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </a>
+                </div>
+            </section>
+
+            <section class="paths">
+                <div class="paths__container container">
+                    <div class="paths__item">
+                        <span>Главная</span>
+                        <img class="paths__icon" src="img/icons/icons.svg#down" alt="arrow">
+                    </div>
+                    <div class="paths__item">
+                        <span>Автомобили и мотоциклы</span>
+                        <img class="paths__icon" src="img/icons/icons.svg#down" alt="arrow">
+                    </div>
+                    <div class="paths__item">
+                        <span>Легковые</span>
+                        <img class="paths__icon" src="img/icons/icons.svg#down" alt="arrow">
+                    </div>
+                    <div class="paths__item">
+                        <span>Tamiya</span>
+                        <img class="paths__icon" src="img/icons/icons.svg#down" alt="arrow">
+                    </div>
+                    <div class="paths__item">
+                        <span>Porsche 959</span>
+                        <img class="paths__icon" src="img/icons/icons.svg#down" alt="arrow">
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="main-title">
+                <div class="main-title__container container">
+                    <div class="main-title__title">Каталог</div>
+                    <div class="main-title__products">
+                        <div class="main-title__quantity">1223</div>
+                        <span>товара</span>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="content">
+                <div class="content__container container">
+                    <div class="content__body">
+                        <aside class="content__filter filter">
+                            <form action="#" method="post" class="filter__form">
+                                <div class="filter__category category-filter">
+                                    <div class="category-filter__title">Категории</div>
+                                    <ul class="category-filter__list">
+                                        <li class="category-filter__item category-filter__item_active">Авиация</li>
+                                        <li class="category-filter__item">Автомобили и мотоциклы</li>
+                                        <li class="category-filter__item">Аэрографы и компрессоры</li>
+                                        <li class="category-filter__item">Военная техника</li>
+                                        <li class="category-filter__item">Доработка моделей</li>
+                                        <li class="category-filter__item">Железная дорога</li>
+                                        <li class="category-filter__item">Инструмент</li>
+                                        <li class="category-filter__item">Клей</li>
+                                        <li class="category-filter__item">Краска</li>
+                                        <li class="category-filter__item">Литература</li>
+                                        <li class="category-filter__item">Миниатюра и диорама</li>
+                                        <li class="category-filter__item">Модели для детей</li>
+                                        <li class="category-filter__item">Модельная химия</li>
+                                        <li class="category-filter__item">Печатная продукция</li>
+                                        <li class="category-filter__item">Флот</li>
+                                        <li class="category-filter__item">Футляры и подставки</li>
+                                    </ul>
+                                </div>
+        
+                                <div data-spollers class="filter__manufacturer manufacturer">
+                                    <div data-spoller class="manufacturer__title title-filter">
+                                        <span>Производитель</span>
+                                        <img class="manufacturer__arrow arrow-filter" src="img/icons/icons.svg#down" alt="down">
+                                    </div>
+                                    <div class="manufacturer__body">
+                                        <div class="manufacturer__search">
+                                            <input type="text" name="manufacturer-search" placeholder="Поиск..." class="manufacturer__input">
+                                            <svg class="manufacturer__icon">
+                                                <use xlink:href="img/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="manufacturer__list">
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb1" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb1" class="checkbox__label"><span class="checkbox__text">AVD</span><small>124</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input checked id="manCb2" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb2" class="checkbox__label"><span class="checkbox__text">Advanced Modeling</span><small>67</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb3" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb3" class="checkbox__label"><span class="checkbox__text">Start Scale Models <br> (SSM)</span><small>123</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb4" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb4" class="checkbox__label"><span class="checkbox__text">Edmon Studia</span><small>423</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb5" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb5" class="checkbox__label"><span class="checkbox__text">Modelcollect</span><small>654</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb6" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb6" class="checkbox__label"><span class="checkbox__text">ModelGun</span><small>23</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb7" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb7" class="checkbox__label"><span class="checkbox__text">Восточный Экспресс</span><small>443</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb8" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb8" class="checkbox__label"><span class="checkbox__text">Advanced Modeling</span><small>224</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb9" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb9" class="checkbox__label"><span class="checkbox__text">Восточный Экспресс</span><small>443</small></label>
+                                            </div>
+                                            <div class="manufacturer__checkbox checkbox">
+                                                <input id="manCb10" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="manCb10" class="checkbox__label"><span class="checkbox__text">Advanced Modeling</span><small>224</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div data-spollers class="filter__scale scale">
+                                    <div data-spoller class="scale__title title-filter">
+                                        <span>Масштаб</span>
+                                        <img class="scale__arrow arrow-filter" src="img/icons/icons.svg#down" alt="down">
+                                    </div>
+                                    <div class="scale__body">
+                                        <div class="scale__search">
+                                            <input type="text" name="scale-search" placeholder="Поиск..." class="scale__input">
+                                            <svg class="scale__icon">
+                                                <use xlink:href="img/icons/icons.svg#search"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="scale__list">
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb1" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb1" class="checkbox__label"><span class="checkbox__text">1:24</span><small>124</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input checked id="scaleCb2" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb2" class="checkbox__label"><span class="checkbox__text">1:6</span><small>67</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb3" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb3" class="checkbox__label"><span class="checkbox__text">1:12</span><small>123</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb4" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb4" class="checkbox__label"><span class="checkbox__text">1:9</span><small>423</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb5" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb5" class="checkbox__label"><span class="checkbox__text">1:32</span><small>654</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb6" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb6" class="checkbox__label"><span class="checkbox__text">1:35</span><small>23</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb7" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb7" class="checkbox__label"><span class="checkbox__text">1:43</span><small>443</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb8" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb8" class="checkbox__label"><span class="checkbox__text">1:16</span><small>224</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb9" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb9" class="checkbox__label"><span class="checkbox__text">1:43</span><small>443</small></label>
+                                            </div>
+                                            <div class="scale__checkbox checkbox">
+                                                <input id="scaleCb10" class="checkbox__input" type="checkbox" value="1" name="manufacturer">
+                                                <label for="scaleCb10" class="checkbox__label"><span class="checkbox__text">1:16</span><small>224</small></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div data-spollers class="filter__price price-filter">
+                                    <div data-spoller class="price-filter__title title-filter">
+                                        <span>Цена</span>
+                                        <img class="price-filter__arrow arrow-filter" src="img/icons/icons.svg#down" alt="down">
+                                    </div>
+                                    <div data-range class="price-filter__body">
+                                        <div class="price-filter__label">
+                                            <span>От</span>
+                                            <span>До</span>
+                                        </div>
+                                        <div class="price-filter__inputs">
+                                            <input data-range-from="0" value="3211" type="text" name="input-filter" class="price-filter__input">
+                                            <input data-range-to="10200" value="10200" type="text" name="input-filter" class="price-filter__input">
+                                        </div>
+                                        <div data-range-item class="price-filter__range"></div>
+                                    </div>
+                                </div>
+        
+                                <div class="filter__switcher switcher">
+                                    <div class="switcher__body">
+                                        <input id="switcher__input" class="switcher__input" checked type="checkbox" name="switcher-checkbox">
+                                        <div class="switcher__text">Только товары в наличии</div>
+                                    </div>
+                                </div>
+        
+                                <div class="filter__select select-filter">
+                                    <div class="select-filter__text">Показывать на странице</div>
+                                    <div data-state="" class="select-filter__body">
+                                        <div class="select-filter__title" data-default="Option 0">160 товаров</div>
+                                        <div class="select-filter__content">
+                                            <input id="singleSelect0" class="select-filter__input" type="radio" name="singleSelect" checked/>
+                                            <label for="singleSelect0" class="select-filter__label">160 товаров</label>
+                                            <input id="singleSelect1" class="select-filter__input" type="radio" name="singleSelect"/>
+                                            <label for="singleSelect1" class="select-filter__label">100 товаров</label>
+                                            <input id="singleSelect2" class="select-filter__input" type="radio" name="singleSelect"/>
+                                            <label for="singleSelect2" class="select-filter__label">160 товаров</label>
+                                            <input id="singleSelect3" class="select-filter__input" type="radio" name="singleSelect"/>
+                                            <label for="singleSelect3" class="select-filter__label">200 товаров</label>
+                                            <input id="singleSelect4" class="select-filter__input" type="radio" name="singleSelect"/>
+                                            <label for="singleSelect4" class="select-filter__label">300 товаров</label>
+                                        </div>
+                                    </div>
+                                    <img class="select-filter__arrow arrow-filter" src="img/icons/icons.svg#down" alt="down">
+                                </div>
+    
+                                <button type="reset" class="filter__btn">Сбросить товары</button>
+    
+                                <div class="filter__favorite favorite-filter">
+                                    <div class="favorite-filter__text">Сохранить подборку</div>
+                                    <svg class="favorite-filter__icon">
+                                        <use xlink:href="img/icons/icons.svg#favorite"></use>
+                                    </svg>
+                                </div>
+    
+                            </form>
+                            
+                        </aside>
+    
+                        <div class="content__catalog catalog">
+                            ТУТ БУДУТ КАРТОЧКИ)
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+        </main>
+
+        <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__logo">
+            <picture><source srcset="img/logo-footer.webp" type="image/webp"><img src="img/logo-footer.png" alt="logo"></picture>
+        </div>
+        <div class="footer__content">
+            <div class="footer__item footer__item_sales">
+                <div class="footer__title">Акции и скидки</div>
+                <ul class="footer__list">
+                    <li class="footer__link"><a href="#">Любимый производитель</a></li>
+                    <li class="footer__link"><a href="#">Бонусы за отзывы</a></li>
+                    <li class="footer__link"><a href="#">ЛавкаSALE</a></li>
+                    <li class="footer__link"><a href="#">Бесплатная доставка</a></li>
+                    <li class="footer__link"><a href="#">500 бонусов за отзыв</a></li>
+                    <li class="footer__link"><a href="#">Бонусы</a></li>
+                </ul>
+            </div>
+            <div class="footer__item footer__item_buyer">
+                <div class="footer__title">Покупателям</div>
+                <ul class="footer__list">
+                    <li class="footer__link"><a href="#">Как заказать?</a></li>
+                    <li class="footer__link"><a href="#">Оплата и доставка</a></li>
+                    <li class="footer__link"><a href="#">Контакты</a></li>
+                    <li class="footer__link"><a href="#">Оптовым клиентам</a></li>
+                </ul>
+            </div>
+            <div class="footer__item footer__item_assort">
+                <div class="footer__title">Ассортимент</div>
+                <ul class="footer__list">
+                    <li class="footer__link"><a href="#">Производители</a></li>
+                    <li class="footer__link"><a href="#">Каталог</a></li>
+                    <li class="footer__link"><a href="#">Новинки</a></li>
+                </ul>
+            </div>
+            <div class="footer__item item-social">
+                <div class="item-social__contacts">
+                    <a href="tel:+78005550736" class="item-social__phone">8 800 555-07-36</a>
+                    <div class="item-social__time">с 9:00 до 18:00</div>
+                </div>
+                <div class="item-social__networks">
+                    <svg id="vk">
+                        <use xlink:href="img/icons/icons.svg#vk"></use>
+                    </svg>
+                    <svg id="insta">
+                        <use xlink:href="img/icons/icons.svg#insta"></use>
+                        <linearGradient id="gradient">
+                            <stop offset="0%" stop-color="#FEC61E" />
+                            <stop offset="50%" stop-color="#F50001" />
+                            <stop offset="100%" stop-color="#C30098" />
+                        </linearGradient>
+                    </svg>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer__copy">© Место для копирайта или подобной информации ООО “Модельная лавка” 2010-2021 </div>
+
+    </div>
+    
+    
+</footer>
+    </div>
+    
+
+    <script src="js/app.min.js?_v=20221129155826"></script>
+</body>
+</html>
